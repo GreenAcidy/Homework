@@ -1,0 +1,81 @@
+
+#first
+{
+background-color: #FFA500;
+height :100px;
+width :645px;
+float: left; 
+
+}
+#second
+{
+background-color: #FFA500;
+height :100px;
+width :655px; 
+float: right;
+}
+#clear {
+    clear: left;
+    clear: right;
+    height: 10px;
+   }
+#third
+{
+	background-color: #00008B;
+	height: 250px;
+}
+#fourth
+{
+background-color:#00FF00;
+height: 150px;
+width: 400px;
+float: left;
+
+}
+#fifth
+{
+background-color:#00FF00;
+height: 150px;
+width: 400px;
+float: left;
+margin-left: 76px;
+}
+#sixth
+{
+background-color:#00FF00;
+height: 150px;
+width: 400px;
+float: right;
+margin-left: 2%;
+}
+#seventh
+{
+background-color:#000000;
+height: 100px;
+width: 310px;
+float: left;
+}
+#eighth
+{
+background-color:#000000;
+height: 100px;
+width: 310px;
+float: left;
+margin-left: 2%;
+}
+#nineth
+{
+background-color:#000000;
+height: 100px;
+width: 310px;
+float: left;
+margin-left: 33px;
+}
+#tenth
+{
+background-color:#000000;
+height: 100px;
+width: 310px;
+float: right;
+margin-left: 2%;
+}
