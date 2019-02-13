@@ -1,0 +1,130 @@
+body
+{
+	display: flex;
+
+	flex-wrap: wrap;
+}
+div
+{
+	display: inline-block;
+}
+#first
+{
+background-color: #FF0000;
+height :100px;
+width :39.6%;
+margin-right: 3px;
+}
+#second
+{
+background-color: #FF8C00;
+height :100px;
+width :60%; 
+}
+#third
+{
+	background-color: #00ff00;
+	height: 300px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	width: 99.9%;
+}
+#fourth
+{
+background-color:#CD5C5C;
+height: 200px;
+width: 33.3%;
+
+}
+#fifth
+{
+background-color:#0000ff;
+height: 200px;
+width: 33%;
+margin-right: 3px;
+margin-left: 3px;
+}
+#sixth
+{
+background-color:#C71585;
+height: 200px;
+width: 33%;
+}
+@media (max-width: 1024px) and (max-height: 768px) 
+{
+	#fourth
+	{
+		display: none;
+	}
+	#second
+	{
+		height :100px;
+		width :39.2%;
+	}
+	#sixth
+	{
+		height :100px;
+		width :60.3%;
+		position: absolute;
+		margin-left: 39%;
+	}
+	#first
+	{
+		width: 99%;
+		height: 200px;
+		position: absolute;
+		top: 110px;
+	}
+	#third, #fifth
+	{
+		position: absolute;
+		height: 80px;
+	}
+	#third
+	{
+		top: 302px;
+		left: 8px;
+		width: 49%;
+	}
+	#fifth
+	{
+		width: 50%;
+		left: 50%;
+		top: 312px;
+	}
+
+}
+@media (max-width: 667px) and (max-height: 375px)
+{
+	#second, #fourth, #fifth
+	{
+		display: none;
+	}
+	#first, #third, #sixth
+	{
+		display: block;
+		width: 100%;
+	}
+	#third
+	{
+		position: absolute;
+		height: 80px;
+		top: 85px;
+		margin-right: auto;
+		margin-left: auto;
+	}
+	#sixth
+	{
+		height: 80px;
+		margin-right: auto;
+		margin-left: auto;
+	}
+
+	#first
+	{
+		position: absolute;
+		height: 160px;
+		top: 200px;
+		width: 100%;
+	}
+}
