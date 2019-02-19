@@ -1,0 +1,142 @@
+html,body
+{
+	height: 100%;
+	background-color: #D3D3D3;
+}
+#parent
+{
+	height: 100%;
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+}
+#botton1
+{
+	background-color: #ff0000;
+	height: 60px;
+	width: 80px;
+	text-align: center;
+	border-radius: 10px 10px 10px 10px;
+	line-height: 3em;
+	margin: 10px 10px 10px 10px;
+}
+#botton2
+{
+	background-color: #00ff00;
+	height: 60px;
+	width: 80px;
+	text-align: center;
+	border-radius: 10px 10px 10px 10px;
+	line-height: 20px;
+	margin: 10px 10px 10px 10px;
+}
+#botton3
+{
+	background-color: #0000ff;
+	height: 60px;
+	width: 80px;
+	text-align: center;
+	border-radius: 10px 10px 10px 10px;
+	line-height: 20px;
+	margin: 10px 10px 10px 10px;
+}
+
+.parent1
+{
+	display: flex;
+	height: 20%;
+
+}
+.logo, .search
+{
+	text-align: center;
+	font-size: 30px;
+	line-height: 4em;
+	font-weight: bold;
+	margin: auto;
+	background-color: #20B2AA;
+	width: 40%;
+	height: 100%;
+
+}
+.center {
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+} 
+.parent2
+{
+	display: flex;
+	background-color: #fff;
+}
+.punkt1, .punkt2, .punkt3 ,.punkt4, .punkt5, .punkt6
+{
+	background-color: #20B2AA;
+	text-align: center;
+	margin: auto;
+	margin-bottom: 5px;
+	margin-top: 5px;
+	padding: 3px;
+} 
+.grandparent1
+{
+	width: 23%;
+	height: 70%;
+
+}
+.parent3
+{
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+}
+.block1, .block2, .block3, .block4, .block5
+{
+	background-color: #20B2AA;
+	margin-bottom: 5px;
+	margin-top: 5px;
+	padding: 3px;
+	font-weight: bold;
+}
+.grandparent2
+{
+	width: 76%;
+	height: 70%;
+}
+.parent4
+{
+	
+	display: flex;
+	width: 100%;
+	height: 100%;
+	flex-wrap: wrap;
+
+}
+.photo1, .photo2, .photo3, .photo4, .photo5, .photo6
+{
+	margin-top: 10px;
+    margin-right: 85px;
+    margin-left: 85px;
+    margin-bottom: 10px;
+    text-align: left;
+}
+img
+{
+	width: 150px;
+	height: 150px;
+	border-radius: 75px;
+    border: 3px solid #20B2AA; 
+}
+.footer
+{
+	text-align: center;
+	font-size: 30px;
+	line-height: 4em;
+	font-weight: bold;
+	margin: auto;
+	background-color: #20B2AA;
+	width: 100%;
+	height: 15%;
+	margin-top: 10px;
+}
+
