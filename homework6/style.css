@@ -1,22 +1,73 @@
 #parent
 {
+	position: absolute;
 	display: flex;
 	justify-content: space-around;
 	flex-wrap: wrap;
 }
-@keyframes anim
+@keyframes anim_stay
 {
-from {background: url('Sindel.png') 0 0px;}
-to {background: url('Sindel.png') -328px 0;}
+from {background: url('subziro.png') 0 0px;}
+to {background: url('subziro.png') -936px 0;}
 }
-#sindel
+#subziro
 {
-	margin-left: -246px;
-	width: 328px;
-	height: 148px;
+	margin-left: -863px;
+	width: 936px;
+	height: 145px;
 	position: fixed;
+	top: 70px;
+	z-index: 9999;
+	animation: anim_stay 1.3s steps(12) infinite; 
+}
 
-	animation: anim 1s steps(4) 1; 
+@keyframes anim_win
+{
+from {background: url('subziro_win.png') 0 0px;}
+to {background: url('subziro_win.png') -320px 0;}
+}
+.subziro_win
+{
+	margin-left: -250px;
+	width: 320px;
+	height: 147px;
+	position: fixed;
+	top: 70px;
+	z-index: 9999;
+	animation: anim_win 1.3s steps(4) 1 forwards;
+}
+
+@keyframes anim_fall
+{
+from {background: url('subziro_fall.png') 0 0px;}
+to {background: url('subziro_fall.png') -745px 0;}
+}
+.subziro_fall
+{
+	margin-left: -610px;
+	width: 745px;
+	height: 153px;
+	position: fixed;
+	top: 70px;
+	z-index: 9999;
+	animation: anim_fall 0.5s steps(5) 1 ; 
+
+}
+
+@keyframes anim_fight
+{
+from {background: url('subziro_fight.png') 0 0px;}
+to {background: url('subziro_fight.png') -1029px 0;}
+}
+.subziro_fight
+{
+	margin-left: -900px;
+	width: 1029px;
+	height: 147px;
+	top: 70px;
+	position: fixed;
+	z-index: 9999;
+	animation: anim_fight 1.3s steps(7) 1; 
 }
 .bounce
 {
@@ -96,6 +147,12 @@ to {background: url('Sindel.png') -328px 0;}
 {
 	background-color:#ffFF00 ;
 	animation: heartBeat 0.1s infinite;
+}
+#b20
+{
+	background-color:#0fFF00 ;
+	animation: heartBeat 0.1s infinite;
+		outline-offset: 50px;
 }
 
 
