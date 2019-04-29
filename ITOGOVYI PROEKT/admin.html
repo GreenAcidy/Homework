@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1"/>
+	<!-- Description-->
+	<title>VapeShop.by</title>
+	<meta name="description" content="Магазин электронных сигарет" />
+	<meta name="keywords" content="VapeShop, Vape, ВейпШоп, Электронная сигарета, Испаритель, Бак, Мод, Сет,Парогенератор">
+	<!-- CSS  -->
+	<link rel="stylesheet" href="CSS/animate.css"/>
+	<link href="CSS/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+	<link href="CSS/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+	<link href="https://fonts.googleapis.com/css?family=Cute+Font" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+</head>
+<body>
+
+	<div class="header wow bounceInDown" data-wow-duration="2s"  >
+		
+		<nav>
+			<div class="nav-wrapper #1a237e indigo darken-3">
+				<!-- Dropdown Trigger -->
+				<a id="dropdown_1" class='dropdown-trigger btn ' href='#' data-target='dropdown1'>Меню</a>
+				<!-- Dropdown Structure -->
+				<ul id='dropdown1' class='dropdown-content '>
+					<li><a href="index.html">Главная</a></li>
+					<li class="divider" tabindex="-1"></li>
+             <li><a href="add_tovar.html">Добавить товар</a></li>
+             <li><a href="add_category.html">Добавить категорию</a></li>
+          </ul>
+          <a href="index.html" class="center brand-logo" >VapeShop</a>
+          <ul id="first_table" class="left hide-on-med-and-down wow bounceInDown" data-wow-duration="1s">
+           <li><a href="https://twitter.com/"><img id="icon1" src="galery/twitter.png"></a></li>
+           <li><a href="https://www.instagram.com/"><img id="icon2" src="galery/instagram.png"></a></li>
+           <li><a href="https://www.facebook.com/"><img id="icon3" src="galery/facebook.png"></a></li>
+           <li><nav>
+             <div class="nav-wrapper #1a237e indigo darken-3">
+               <form>
+                 <div class="input-field">
+                   <input id="search-example" type="search" required="">
+                   <label class="label-icon" for="search-example">
+                     <i class="material-icons">search</i>
+                  </label>
+                  <i class="material-icons">close</i>
+               </div>
+            </form>
+         </div>
+      </nav></li>
+   </ul>
+
+   <ul id="nav-mobile" class="right hide-on-med-and-down">
+   	<li><a class="wow bounceInUp" data-wow-duration="2.1s" href="index.html" class="phone">Главная</a></li>
+   	<li><a class="wow bounceInUp" data-wow-duration="2.2s" href="add_category.html">Добавить категорию</a></li>
+   	<li><a class="wow bounceInUp" data-wow-duration="2.3s" href="add_tovar.html">Добавить товар</a></li>
+   </ul>
+</div>
+</nav>
+</div>
+
+<div class="main">
+<a id="dropdown5" href="#" data-target="slide-out" class="sidenav-trigger btn ">Фильтры</a>
+	<ul id="slide-out" class="sidenav">
+		<li><div class="user-view">
+		</div></li>
+		<li><a id="dropdown_2" class='dropdown-trigger btn ' data-target='dropdown2' href="#" onclick='changeParo()'>Парогенераторы</a>
+			<ul id='dropdown2' class='dropdown-content '>
+					<li><a href="#" onclick="changeParo1()">Двубаночные</a></li>
+					<li class="divider" tabindex="-1"></li>
+   					<li><a href="#" onclick="changeParo2()">Стики</a></li>
+  				</ul></li>
+		<li><a id="dropdown_3" class='dropdown-trigger btn ' data-target='dropdown3' href="#"  onclick='changeGliz()'>Жидкости для вейпа</a>
+			<ul id='dropdown3' class='dropdown-content '>
+					<li><a href="#" onclick="changeGliz1()">До 100мл</a></li>
+					<li class="divider" tabindex="-1"></li>
+   					<li><a href="#" onclick="changeGliz2()">Больше 100мл</a></li>
+  				</ul></li>
+		<li><a id="dropdown_4" class='dropdown-trigger btn ' data-target='dropdown4' href="#" class="waves-effect"  onclick='changeKliro()'>Клиромайзеры</a>
+			<ul id='dropdown4' class='dropdown-content '>
+					<li><a href="#" onclick="changeKliro1()">Обслуживаемые</a></li>
+					<li class="divider" tabindex="-1"></li>
+   					<li><a href="#" onclick="changeKliro2()">Необслуживаемые</a></li>
+  				</ul></li>
+	</ul>
+	<!--<a href="#" data-target="slide-out" class="sidenav-trigger"><i class="material-icons">menu</i></a>-->
+	<div id="flex" class="flex ">
+		<div id="p1" ><div><a href="#" onclick="deleteTovar()"><img src="icons/delete.png"></a></div><img class="itemsimg" src="galery/ijust21700-black.jpg"><a href="Tovar.html" ><br><span class="sizetext">Eleaf iJust 21700 with ELLO Duro</span><div class="price">Редактировать</div></a></div>
+		<div id="p2"><div><a href="#" onclick="deleteTovar()"><img src="icons/delete.png"></a></div><img class="itemsimg" src="galery/wismec-20700-kit-9.jpg"><a href="#" ><br><span class="sizetext">WISMEC RX2 20700 200W TC 6000mAh с Gnome</span><div class="price">Редактировать</div></a></div>
+		<div id="p3"><div><a href="#" onclick="deleteTovar()"><img src="icons/delete.png"></a></div><img class="itemsimg" src="galery/flint_black.jpg"><a href="#" ><br><span class="sizetext">GeekVape Flint KIT</span> <div class="price">Редактировать</div></a></div>
+		<div id="p4"><div><a href="#" onclick="deleteTovar()"><img src="icons/delete.png"></a></div><img class="itemsimg" src="galery/drag-2-new-color-1.jpg"><a href="#" ><br><span class="sizetext">VOOPOO Drag 2 177W Kit with Uforce T2 Tank</span><div class="price">Редактировать</div></a></div>
+		<div id="p5"><div><a href="#" onclick="deleteTovar()"><img src="icons/delete.png"></a></div><img class="itemsimg" src="galery/Lexicon-red.jpg"><a href="#" ><br><span class="sizetext">Eleaf Lexicon 235W TC с ELLO Duro</span> <br> <div class="price">Редактировать</div></a></div>
+		<div id="p6"><div><a href="#" onclick="deleteTovar()"><img src="icons/delete.png"></a></div><img class="itemsimg" src="galery/aegis-mini-11.jpg"><a href="#" ><br><span class="sizetext">GeekVape Aegis MIni 80 W</span><div class="price">Редактировать</div></a></div>
+		<div id="p7"><div><a href="#" onclick="deleteTovar()"><img src="icons/delete.png"></a></div><img class="itemsimg" src="galery/moonbox-10.jpg"><a href="#" ><br><span class="sizetext">Sigelei Vcigo Moon Box 200W</span><div class="price">Редактировать</div></a></div>
+		<div id="p8"><div><a href="#" onclick="deleteTovar()"><img src="icons/delete.png"></a></div><img class="itemsimg" src="galery/Dolphin-11.jpg"><a href="#" ><br><span class="sizetext">Joyetech Atopack DOLPHIN</span><div class="price">Редактировать</div></a></div>
+
+		<div id="k1"><div><a href="#" onclick="deleteTovar()"><img src="icons/delete.png"></a></div><img class="itemsimg" src="galery/alpha-tank-7.jpg"><a href="#" ><br><span class="sizetext">Geekvape Alpha Subohm Tank</span><div class="price">Редактировать</div></a></div>
+		<div id="k2"><div><a href="#" onclick="deleteTovar()"><img src="icons/delete.png"></a></div><img class="itemsimg" src="galery/Ello-Durro-2.jpg"><a href="#" ><br><span class="sizetext">Eleaf ELLO Duro - 6,5</span><div class="price">Редактировать</div></a></div>
+		<div id="k3"><div><a href="#" onclick="deleteTovar()"><img src="icons/delete.png"></a></div><img class="itemsimg" src="galery/TFV-12-Prince-11.jpg"><a href="#" ><br><span class="sizetext">SMOK TFV12 PRINCE Cloud Beast Tank</span><div class="price">Редактировать</div></a></div>
+
+		<div id="g1"><div><a href="#" onclick="deleteTovar()"><img src="icons/delete.png"></a></div><img class="itemsimg" src="galery/bigsaltsnowcactus.jpg"><a href="#" ><br><span class="sizetext">Big Salt Snow Cactus 30 мл</span><div class="price">Редактировать</div></a></div>
+		<div id="g2"><div><a href="#" onclick="deleteTovar()"><img src="icons/delete.png"></a></div><img class="itemsimg" src="galery/mors-klukva-malina2.jpg"><a href="#" ><br><span class="sizetext">Морс - Клюква, Малина, 120 мл</span><div class="price">Редактировать</div></a></div>
+	</div>
+</div>
+
+  <footer class="page-footer #1a237e indigo darken-3 wow" data-wow-offset="100">
+   <div class="container ">
+      <div class="row">
+         <div class="col l6 s12">
+            <h5 class="white-text">Будьте всегда с нами</h5>
+            <p class="white-text"><div class="row">
+               <div class="col s12">
+                  <div class="row">
+                     <div class="input-field col s12">
+                        <input type="text" id="autocomplete-input" class="autocomplete">
+                        <label for="autocomplete-input ">Введите ваш <span style="font-size: 25px;">e-mail</span> адрес</label>
+                     </div>
+                  </div>
+               </div>
+            </div></p>
+         </div>
+
+         <div class="col l4 offset-l2 s12">
+            <a name="Links"></a>
+            <h5 class="white-text">Наш адрес</h5>
+            <ul><li>Республика Беларусь</li>
+               <li>Г.Минск, ул. Октябрьская <span style="font-size: 20px; ">10/а 1204/б</span></li>
+               <li style="font-size: 30px; ">+375333285356</li>
+               <li style="font-size: 30px; ">FirstKnight@list.ru</li>
+               <li><a href="https://twitter.com/"><img id="icon1" src="galery/twitter.png"></a><a href="https://www.instagram.com/"><img id="icon2" src="galery/instagram.png"></a><a href="https://www.facebook.com/"><img id="icon3" src="galery/facebook.png"></a></li>
+
+            </ul>
+         </div>
+      </div>
+   </div>
+   <div class="footer-copyright">
+      <div class="container" style="font-size: 20px;">
+         © 2019 Zhurauleu Kiryl <br>
+         All rights reserved
+      </div>
+      <div class="right" ><img id="icon4" src="galery/maestro.png"><img id="icon5" src="galery/visa.png"><img id="icon6" src="galery/paypal.png"> </div>
+
+   </div>
+</footer>
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="JS/materialize.min.js"></script>
+<script src="JS/script.js"></script>
+<script src="JS/script1.js"></script>
+<script src="JS/wow.js"></script>
+<script>new WOW().init();</script>
+<script type="text/javascript"></script>
+</body>
+</html>
